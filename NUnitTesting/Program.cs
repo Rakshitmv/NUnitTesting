@@ -13,15 +13,18 @@ namespace NUnitTesting
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1: To get Day of the week\n" + "Enter 2: Exit");
+                Console.WriteLine("Enter 1: To get Day of the week\n" + "Enter 2: Vending Machine\n" + "Enter 3: Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         DayOfWeek.Input();
                         break;
-
                     case 2:
+                        VendingMachine machine = new VendingMachine();
+                        machine.Change();
+                        break;
+                    case 3:
                         flag = false;
                         break;
                     default:
