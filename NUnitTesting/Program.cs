@@ -13,7 +13,7 @@ namespace NUnitTesting
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1: To get Day of the week\n" + "Enter 2: Vending Machine\n" + "Enter 3: Exit");
+                Console.WriteLine("Enter 1: To get Day of the week\n" + "Enter 2: Vending Machine\n" +  "Enter 3: Temperature Conversion\n" + "Enter 3: Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -25,6 +25,10 @@ namespace NUnitTesting
                         machine.Change();
                         break;
                     case 3:
+                        TemperatureConversion temperatureConversion = new TemperatureConversion();
+                        temperatureConversion.ConvertTemperature();
+                        break;
+                    case 4:
                         flag = false;
                         break;
                     default:
