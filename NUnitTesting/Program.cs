@@ -13,7 +13,7 @@ namespace NUnitTesting
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1: To get Day of the week\n" + "Enter 2: Vending Machine\n" +  "Enter 3: Temperature Conversion\n" + "Enter 3: Exit");
+                Console.WriteLine("Enter 1: To get Day of the week\n" + "Enter 2: Vending Machine\n" +  "Enter 3: Temperature Conversion\n" + "Enter 4: Monthly Payment\n" + "Enter 5: Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -29,6 +29,10 @@ namespace NUnitTesting
                         temperatureConversion.ConvertTemperature();
                         break;
                     case 4:
+                        MonthlyPayment payment = new MonthlyPayment();
+                        payment.CalMonthlyPayment();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                     default:
