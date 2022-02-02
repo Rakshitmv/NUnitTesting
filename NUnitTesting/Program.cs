@@ -13,7 +13,7 @@ namespace NUnitTesting
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter 1: To get Day of the week\n" + "Enter 2: Vending Machine\n" +  "Enter 3: Temperature Conversion\n" + "Enter 4: Monthly Payment\n" + "Enter 5: Square Roots\n" + "Enter 6: Exit");
+                Console.WriteLine("Enter 1: To get Day of the week\n" + "Enter 2: Vending Machine\n" +  "Enter 3: Temperature Conversion\n" + "Enter 4: Monthly Payment\n" + "Enter 5: Square Roots\n" + "Enter 6: Get decimal to binary\n" + "Enter 7: Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -37,6 +37,10 @@ namespace NUnitTesting
                         squareRoot.SqrtRoot();
                         break;
                     case 6:
+                        ToBinary toBinary = new ToBinary();
+                        toBinary.Binary();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                     default:
